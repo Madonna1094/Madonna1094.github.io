@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moana's Kitchen - Indian Cuisine in Calgary</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="Scripts/script.js"></script>
 </head>
 
 <body>
@@ -37,8 +38,11 @@
     <div id="menu">
         <h2>Our Menu</h2>
 
+        <!-- Sort Button -->
+        <button id="sort-button">Sort Menu by Price</button>
+
         <!-- Food Items Table -->
-        <table border="1">
+        <table id="menu-table" border="1">
             <caption>Indian Cuisine Menu</caption>
             <thead>
                 <tr>
@@ -60,7 +64,7 @@
                 </tr>
                 <tr>
                     <td>Palak Paneer</td>
-                    <td>Soft paneer cubes in a mild spinach gravy, perfect for vegetarians.</td>
+                    <td>Soft paneer cubes in a mild spinach gravy.</td>
                     <td><span class="price">$14.99</span></td>
                 </tr>
                 <tr>
@@ -78,36 +82,51 @@
 
         <!-- Food Items List -->
         <h3>Popular Dishes</h3>
-<table class="popular-dishes-table">
-    <tr>
-        <td>Butter Chicken</td>
-        <td><img src="Images/ButterChicken.jpg" alt="Butter Chicken" width="100" height="100"></td>
-    </tr>
-    <tr>
-        <td>Chicken Tikka Masala</td>
-        <td><img src="Images/chickentikkamasala.jpg" alt="Chicken Tikka Masala" width="100" height="100"></td>
-    </tr>
-    <tr>
-        <td>Palak Paneer</td>
-        <td><img src="Images/palakpanner.jpg" alt="Palak Paneer" width="100" height="100"></td>
-    </tr>
-    <tr>
-        <td>Chicken Biryani</td>
-        <td><img src="Images/chicken biryani.jpg" alt="Chicken Biryani" width="100" height="100"></td>
-    </tr>
-    <tr>
-        <td>Gulab Jamun (Dessert)</td>
-        <td><img src="Images/gulabjamun.jpg" alt="Gulab Jamun (Dessert)" width="100" height="100"></td>
-    </tr>
-</table>
+        <table class="popular-dishes-table">
+            <tr>
+                <td>Butter Chicken</td>
+                <td><img src="Images/ButterChicken.jpg" alt="Butter Chicken" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Chicken Tikka Masala</td>
+                <td><img src="Images/chickentikkamasala.jpg" alt="Chicken Tikka Masala" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Palak Paneer</td>
+                <td><img src="Images/palakpanner.jpg" alt="Palak Paneer" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Chicken Biryani</td>
+                <td><img src="Images/chicken biryani.jpg" alt="Chicken Biryani" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Gulab Jamun (Dessert)</td>
+                <td><img src="Images/gulabjamun.jpg" alt="Gulab Jamun (Dessert)" width="100" height="100"></td>
+            </tr>
+        </table>
 
-        <!-- Specials -->
+        <!-- Toggle Specials -->
         <h3>Today's Special</h3>
-        <ol>
+        <button id="toggle-specials">Show/Hide Specials</button>
+        <ol id="specials">
             <li>Paneer Butter Masala</li>
             <li>Garlic Naan</li>
             <li>Chai Tea</li>
         </ol>
+    </div>
+
+    <!-- Interactive Buttons Section -->
+    <div id="interactive-buttons">
+        <h3>Try Our Fun Features</h3>
+        <button id="alert-button">Click Me for a Greeting</button>
+        <button id="hover-button">Hover for a surprise!</button>
+        <br><br>
+        <button id="increment-button">Click to Count</button>
+        <span id="counter-display">0</span>
+        <br><br>
+        <button id="spicy-button">Are You Okay with Spicy?</button>
+        <br><br>
+        <button id="log-dishes">Log All Dishes in Console</button>
     </div>
 
     <!-- Contact Us Section -->
